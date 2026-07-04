@@ -4,40 +4,121 @@
     box-sizing: 0;
 }
 body{
-    background-color: rgb(94, 38, 158);
+    background-color: rgb(175, 195, 218);
     display: flex;
     flex-direction: column;
 }
 
 header{
-    background-color: aquamarine;
-    /* display: flex; */
-    margin: 2px;
-}
-nav ul{
+    background-color: rgb(20, 22, 56);
+    padding: 5px;
     text-align: center;
-    display: flex;
-    list-style: none;
-    gap: 4px;
+    color: aliceblue;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
-header h1{
-    margin-left: 0;
+nav ul{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+
+/* .wrapper-superior{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .wrapper{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+} */
+
+
+.principal{
+    /* display: flex;
+    flex-direction: row; */
+    gap: 10px;
+}
+
+.topicos{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(81, 119, 163);
 }
 
 .wrapper{
-    background-color: aliceblue;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.wrapper1{
-    background-color: aliceblue;
-    border-radius: 5px;
     margin: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:20px;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+}
+
+.projetos{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.projeto{
+    background-color: rgb(19, 6, 65);
+    /* flex: 25%; */
+    padding: 5px;
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.sobre p{
+    background-color:  rgb(81, 119, 163);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.form{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(33, 9, 59);
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+@media(min-width: 660px){
+    .principal{
+        display: flex;
+        flex-direction: row;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: row;
+
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
