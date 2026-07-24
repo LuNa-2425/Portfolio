@@ -1,0 +1,75 @@
+/* 
+Código CSS pensado em Mobile First
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-fundo: #0F172A;
+    --cor-card: #1E293B;
+    --cor-texto: #F8FAFC;
+    --cor-texto2: #030b13;
+    --cor-secundaria: #CBD5E1;
+    --cor-destaque: #38BDF8;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* HEADER - Cabeçalho */
+header{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto2);
+    padding: 15px;
+    display: flex;
+}
+nav li, a{
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+}
+
+
+/* SOBRE */
+.sobre{
+    background-color: var(--cor-card);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+/* HABILIDADES */
+
+
+/* PROJETOS */
+
+
+/* CONTATO */
+.contato{
+    background-color: var(--cor-card);
+    padding: 15px;
+
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    /* background-color: var(--cor-secundaria); */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
