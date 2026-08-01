@@ -24,7 +24,8 @@ Código CSS pensado em Mobile First
     --cor-texto: #F8FAFC;
     --cor-texto2: #94A3B8;
     --cor-secundaria: #1E293B;
-    --cor-destaque: #06B6D4;
+    --cor-destaque: #06cdd4;
+    --cor-icone: #b310f3;
 }
 
 
@@ -35,7 +36,7 @@ body{
 }
 
 
-/* HEADER ---------------------------------- Cabeçalho */
+/* HEADER ------------------------------------------------------------------- Cabeçalho */
 header{
     background-color: var(--cor-secundaria);
     color: var(--cor-destaque);
@@ -54,7 +55,7 @@ nav li, a{
 }
 
 
-/* SOBRE */
+/* SOBRE ------------------------------------------------------------------------------- */
 .sobre{
     /* background-color: var(--cor-card); */
     padding: 15px;
@@ -78,7 +79,7 @@ nav li, a{
     line-height: 1.5;
 }
 
-/* HABILIDADES */
+/* HABILIDADES -------------------------------------------------------------------------- */
 .habilidades{
     text-align: center;
 }
@@ -124,6 +125,10 @@ nav li, a{
     background-color: var(--cor-card);
     padding: 15px;
     line-height: 1.5;
+}
+
+.fa-brands{
+    color:var(--cor-icone);
 }
 
 .informacoes-projeto p{
@@ -184,7 +189,7 @@ nav li, a{
     transform: translateX(-66%);
 }
 
-/* Mudar cor da bolinha quando clicada  */
+/* Mudar cor da bolinha  */
     #slide1:checked~.carrossel-nav-dots label[for="slide1"],
     #slide2:checked~.carrossel-nav-dots label[for="slide2"],
     #slide3:checked~.carrossel-nav-dots label[for="slide3"]{
@@ -192,13 +197,30 @@ nav li, a{
     }
 
 
-/* CONTATO */
+/* CONTATO  -------------------------------------------------------------------------------- */
 .contato{
     background-color: var(--cor-card);
     padding: 15px;
+    line-height: 1.5;
+}
+.campo-formulario textarea, input{
+    border-radius: 8px;
+    border: none;
 }
 
-/* FOOTER----------------------------- RODAPÉ*/
+form button{
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border: none;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* FOOTER---------------------------------------------------------------------------- RODAPÉ */
 
 footer{
     margin-top: 15px;
@@ -212,7 +234,7 @@ footer{
 
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES --------------------------------------------------------------------------- */
 
 @media (min-width: 768px){
     /* HEADER */
@@ -237,6 +259,10 @@ footer{
     .sobre{
         display: flex;
         flex-direction: row;
+    }
+    .sobre .imagem{
+        width: 200px;
+        height: 100%;
     }
 
     .sobre h2{
