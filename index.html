@@ -3,97 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFÓLIO</title>
+    <title>Portfólio | LuNa</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <h1>TÍTULO</h1>
-    
-    <!-- <h1>Primeiro Portfólio⏲️</h1> -->
-    
-        <nav>
-            <ul>
-            <a href=""><li>Sobre mim</li></a>
-            <a href=""><li>Projetos</li></a>
-            <a href=""><li>Contato</li></a>
+    <header class="cabecalho">
+        <h1 class="titulo-principal">LunaTech</h1>
+        <nav class="menu-navegacao">
+            <ul class="lista-menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="wrapper-superior">
-        <!-- PRINCIPAL - Habilidades, Ferramentas -->
-        <div class="wrapper">
-            <div class="principal">
-                <div class="topicos">
-                    <h2>Habilidades</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum, quas laborum commodi voluptatibus possimus sit temporibus similique rerum, illo iure aliquam explicabo nesciunt cum labore. Hic corporis rem similique?</p>
-                </div>
-                    <img src="" alt="Meramente Ilustrativo">
-                <div class="topicos">
-                    <h2>Ferramentas</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci hic molestiae, voluptatibus est quam accusamus quod, explicabo incidunt quaerat eligendi debitis voluptatum ab. Molestiae necessitatibus unde ea veniam cupiditate quo.
-                    </p>
-                </div>
+    <main class="conteudo">
+        <section class="secao sobre" id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="imagem">
+                <img src="img/urso.webp" alt="Imagem de apresentação">
             </div>
-        </div>
-        
-        <!-- SOBRE MIM -->
-        <div class="wrapper">
-                <h2>SOBRE MIM</h2>
-            <div class="sobre">
-                <img src="" alt="Imagem">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam ab ipsum tempore ullam repudiandae minima natus, eos sequi molestiae in quia molestias voluptatibus dolorum sed. Enim consectetur tempore fugit reiciendis.</p>
-            </div>
-        </div>
+            <p class="area-texto">
+                Sou recém formada em Técnico em Desenvolvimento de Sistemas,
+                com interesse em desenvolvimento de software e tecnologia.
+                Busco minha primeira oportunidade profissional para aplicar
+                meus conhecimentos e continuar aprendendo.
+            </p>
+        </section>
 
-        <!-- PROJETOS -->
-        <div class="projetos">
-            <h1>PROJETOS</h1>
-            <div class="container">
-                <div class="projeto">
-                    <img src="" alt="ou iframe">
-                    <div class="projeto-content">
-                        <p>Descrição do projeto, data. Instituição</p>
-                        <a href="#">Ver projeto</a>
-                    </div>
+        <section class="secao habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="lista-habilidades">
+                    <h3>Ferramentas</h3>
+                <article class="card-habilidade">
+                    <a href="#"><i class="fa-brands fa-html5 html"></i>HTML</a>
+                    <a href="#"><i class="fa-brands fa-java java"></i>JAVA</a>
+                    <a href="#"><i class="fa-brands fa-python python"></i>PYTHON</a>
+                    <a href="#"><i class="fa-brands fa-node-js node"></i>NODE</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao projetos" id="projetos">
+            <h2>Projetos</h2>
+            <div class="lista-projetos carrossel">
+                <input type="radio" name="carrossel" id="slide1" checked>
+                <input type="radio" name="carrossel" id="slide2">
+                <input type="radio" name="carrossel" id="slide3">
+               
+                <div class="carrossel-slide">
+
+                    <article class="card-projeto">
+                        <div class="imagem-projeto">
+                            <img src="img/tecidos.jpe" alt="Site para Tecidos">
+                        </div>
+                        <div class="informacoes-projeto">
+                            <h3>Projeto 1</h3>
+                            <p>Descrição do projeto, tecnologias utilizadas e informações relevantes.</p>
+                            <a href="https://luna-2425.github.io/final/">Ver projeto</a>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto">
+                        <div class="imagem-projeto">
+                            <img src="img/sapatos.jpe" alt="Site de Sapatos">
+                        </div>
+                        <div class="informacoes-projeto">
+                            <h3>Projeto 2</h3>
+                            <p>Descrição do projeto, tecnologias utilizadas e informações relevantes.</p>
+                            <a href="#">Ver projeto</a>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto">
+                        <div class="imagem-projeto">
+                            <img src="img/padaria.jpg" alt="Imagem do projeto">
+                        </div>
+                        <div class="informacoes-projeto">
+                            <h3>Projeto 3</h3>
+                            <p>Descrição do projeto, tecnologias utilizadas e informações relevantes.</p>
+                            <a href="#">Ver projeto</a>
+                        </div>
+                    </article>
                 </div>
-                <div class="projeto">
-                    <img src="" alt="ou iframe">
-                    <div class="projeto-content">
-                        <p>Descrição do projeto, data. Instituição</p>
-                        <a href="#">Ver projeto</a>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="" alt="ou iframe">
-                    <div class="projeto-content">
-                        <p>Descrição do projeto, data. Instituição</p>
-                        <a href="#">Ver projeto</a>
-                    </div>
+                <div carrossel-nav-dots>
+                    <label for="slide1" class="carrossel-dot"></label>
+                    <label for="slide2" class="carrossel-dot"></label>
+                    <label for="slide3" class="carrossel-dot"></label>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- FORMULÁRIO DE CONTATO -->
-        <div class="form">
-            <form action="">
-                <h2>CONTATO</h2>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" placeholder="endereco@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="msg">Mensagem: </label>
-                    <textarea id="msg" rows="4"></textarea> <!-- Permite entrada de múltiplas linhas (rows)-->
-                </div>
+        <section class="secao contato" id="contato">
+            <h2>Contato</h2>
+            <div class="formulario-container">
+                <h3>Envie uma mensagem</h3>
+                <form class="formulario-contato">
+                    <div class="campo-formulario">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="exemplo@email.com" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem"></textarea>
+                    </div>
                     <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy;2026 LunaTech - Todos os direitos reservados</p>
+    <footer class="rodape">
+        <p>&copy; 2026 LuNaTech - Todos os direitos reservados.</p>
     </footer>
-    </body>
+</body>
 </html>
